@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="11" result="Passed" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="19" engine-version="3.11.1.0" clr-version="4.0.30319.42000" start-time="2020-06-30 20:25:48Z" end-time="2020-06-30 20:25:54Z" duration="5.941305">
+  <command-line><![CDATA[nunit3-console.exe  "C:\Users\Andy\Documents\Visual Studio 2017\Projects\ToDoAPI\ToDoAPI\bin\Debug\ToDoAPI.exe"]]></command-line>
+  <test-suite type="Assembly" id="0-1018" name="ToDoAPI.exe" fullname="ToDoAPI.exe" runstate="Runnable" testcasecount="11" result="Passed" start-time="2020-06-30 20:25:49Z" end-time="2020-06-30 20:25:54Z" duration="4.837182" total="11" passed="11" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="19">
+    <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.18362.0" platform="Win32NT" cwd="C:\Users\Andy\Documents\Visual Studio 2017\Projects\ToDoAPI\packages\NUnit.ConsoleRunner.3.11.1\tools" machine-name="LAPTOP-AIT6JUVL" user="Andy" user-domain="LAPTOP-AIT6JUVL" culture="en-IN" uiculture="en-GB" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\Andy\Documents\Visual Studio 2017\Projects\ToDoAPI\packages\NUnit.ConsoleRunner.3.11.1\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="RuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="21212" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="SetUpFixture" id="0-1000" name="[default namespace]" fullname="ToDoAPI_NUnitAssemblyHooks" classname="ToDoAPI_NUnitAssemblyHooks" runstate="Runnable" testcasecount="11" result="Passed" start-time="2020-06-30 20:25:49Z" end-time="2020-06-30 20:25:54Z" duration="4.813596" total="11" passed="11" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="19">
+      <output><![CDATA[-> Loading plugin C:\Users\Andy\Documents\Visual Studio 2017\Projects\ToDoAPI\ToDoAPI\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+-> Using default config
+]]></output>
+      <test-suite type="TestSuite" id="0-1019" name="ToDoAPI" fullname="ToDoAPI" runstate="Runnable" testcasecount="11" result="Passed" start-time="2020-06-30 20:25:50Z" end-time="2020-06-30 20:25:54Z" duration="3.988697" total="11" passed="11" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="19">
+        <test-suite type="TestSuite" id="0-1020" name="Features" fullname="ToDoAPI.Features" runstate="Runnable" testcasecount="11" result="Passed" start-time="2020-06-30 20:25:50Z" end-time="2020-06-30 20:25:54Z" duration="3.988624" total="11" passed="11" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="19">
+          <test-suite type="TestFixture" id="0-1001" name="DeleteMethodScenarioFeature" fullname="ToDoAPI.Features.DeleteMethodScenarioFeature" classname="ToDoAPI.Features.DeleteMethodScenarioFeature" runstate="Runnable" testcasecount="3" result="Passed" start-time="2020-06-30 20:25:50Z" end-time="2020-06-30 20:25:52Z" duration="1.650357" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+            <properties>
+              <property name="Description" value="DeleteMethodScenario" />
+            </properties>
+            <test-suite type="ParameterizedMethod" id="0-1005" name="DeleteATodo" fullname="ToDoAPI.Features.DeleteMethodScenarioFeature.DeleteATodo" classname="ToDoAPI.Features.DeleteMethodScenarioFeature" runstate="Runnable" testcasecount="3" result="Passed" start-time="2020-06-30 20:25:50Z" end-time="2020-06-30 20:25:52Z" duration="1.638893" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+              <properties>
+                <property name="Description" value="Delete a todo" />
+                <property name="Category" value="mytag" />
+              </properties>
+              <test-case id="0-1002" name="DeleteATodo(&quot;25&quot;,&quot;200&quot;,null)" fullname="ToDoAPI.Features.DeleteMethodScenarioFeature.DeleteATodo(&quot;25&quot;,&quot;200&quot;,null)" methodname="DeleteATodo" classname="ToDoAPI.Features.DeleteMethodScenarioFeature" runstate="Runnable" seed="1828532663" result="Passed" start-time="2020-06-30 20:25:50Z" end-time="2020-06-30 20:25:51Z" duration="0.937815" asserts="1">
+                <output><![CDATA[Given Create Request "/todos/{id}" with "DELETE" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos/{id}", DELETE) (0.1s)
+And Create endpoint for "id" with parameter 25
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "25") (0.0s)
+When API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.7s)
+Then the response code status should be 200
+Response code is: 200
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(200) (0.0s)
+]]></output>
+              </test-case>
+              <test-case id="0-1003" name="DeleteATodo(&quot;258&quot;,&quot;200&quot;,null)" fullname="ToDoAPI.Features.DeleteMethodScenarioFeature.DeleteATodo(&quot;258&quot;,&quot;200&quot;,null)" methodname="DeleteATodo" classname="ToDoAPI.Features.DeleteMethodScenarioFeature" runstate="Runnable" seed="1184398863" result="Passed" start-time="2020-06-30 20:25:51Z" end-time="2020-06-30 20:25:51Z" duration="0.432798" asserts="1">
+                <output><![CDATA[Given Create Request "/todos/{id}" with "DELETE" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos/{id}", DELETE) (0.0s)
+And Create endpoint for "id" with parameter 258
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "258") (0.0s)
+When API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.4s)
+Then the response code status should be 200
+Response code is: 200
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(200) (0.0s)
+]]></output>
+              </test-case>
+              <test-case id="0-1004" name="DeleteATodo(&quot;&quot;,&quot;404&quot;,null)" fullname="ToDoAPI.Features.DeleteMethodScenarioFeature.DeleteATodo(&quot;&quot;,&quot;404&quot;,null)" methodname="DeleteATodo" classname="ToDoAPI.Features.DeleteMethodScenarioFeature" runstate="Runnable" seed="177368160" result="Passed" start-time="2020-06-30 20:25:51Z" end-time="2020-06-30 20:25:52Z" duration="0.259764" asserts="1">
+                <output><![CDATA[Given Create Request "/todos/{id}" with "DELETE" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos/{id}", DELETE) (0.0s)
+And Create endpoint for "id" with parameter
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "") (0.0s)
+When API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.3s)
+Then the response code status should be 404
+Response code is: 404
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(404) (0.0s)
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1006" name="GetMethodScenarioFeature" fullname="ToDoAPI.Features.GetMethodScenarioFeature" classname="ToDoAPI.Features.GetMethodScenarioFeature" runstate="Runnable" testcasecount="3" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:52Z" duration="0.234339" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="8">
+            <properties>
+              <property name="Description" value="GetMethodScenario" />
+            </properties>
+            <test-case id="0-1007" name="RequestAllAvailableTodo" fullname="ToDoAPI.Features.GetMethodScenarioFeature.RequestAllAvailableTodo" methodname="RequestAllAvailableTodo" classname="ToDoAPI.Features.GetMethodScenarioFeature" runstate="Runnable" seed="1977378869" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:52Z" duration="0.136740" asserts="2">
+              <properties>
+                <property name="Description" value="Request all available Todo" />
+              </properties>
+              <output><![CDATA[Given Create Request "/todos" with "GET" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos", GET) (0.0s)
+When API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.0s)
+Then the response code status should be 200
+Response code is: 200
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(200) (0.0s)
+And check if the list count is 200
+Total number of todos is 200
+-> done: GetMethodScenario.Gettodos(200) (0.1s)
+]]></output>
+            </test-case>
+            <test-case id="0-1009" name="RetrieveSingleInvalidTodoById" fullname="ToDoAPI.Features.GetMethodScenarioFeature.RetrieveSingleInvalidTodoById" methodname="RetrieveSingleInvalidTodoById" classname="ToDoAPI.Features.GetMethodScenarioFeature" runstate="Runnable" seed="297690704" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:52Z" duration="0.030213" asserts="1">
+              <properties>
+                <property name="Description" value="Retrieve single invalid  Todo by id" />
+              </properties>
+              <output><![CDATA[Given Create Request "/todos/{id}" with "GET" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos/{id}", GET) (0.0s)
+And Create endpoint for "id" with parameter 500
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "500") (0.0s)
+When API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.0s)
+Then the response code status should be 404
+Response code is: 404
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(404) (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1008" name="RetrieveSingleValidTodoById" fullname="ToDoAPI.Features.GetMethodScenarioFeature.RetrieveSingleValidTodoById" methodname="RetrieveSingleValidTodoById" classname="ToDoAPI.Features.GetMethodScenarioFeature" runstate="Runnable" seed="1663993724" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:52Z" duration="0.066667" asserts="5">
+              <properties>
+                <property name="Description" value="Retrieve single valid  Todo by id" />
+              </properties>
+              <output><![CDATA[Given Create Request "/todos/{id}" with "GET" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos/{id}", GET) (0.0s)
+And Create endpoint for "id" with parameter 25
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "25") (0.0s)
+When API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.0s)
+Then the response code status should be 200
+Response code is: 200
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(200) (0.0s)
+And all mandatory fields
+  --- table step argument ---
+  | userId | id | title                                             | completed |
+  | 2      | 25 | voluptas quo tenetur perspiciatis explicabo natus | True      |
+-> done: GetMethodScenario.ThenAllMandatoryFields(<table>) (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1010" name="PostMethodScenarioFeature" fullname="ToDoAPI.Features.PostMethodScenarioFeature" classname="ToDoAPI.Features.PostMethodScenarioFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:52Z" duration="0.577652" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+            <properties>
+              <property name="Description" value="PostMethodScenario" />
+            </properties>
+            <test-case id="0-1012" name="PostATodoWithBody" fullname="ToDoAPI.Features.PostMethodScenarioFeature.PostATodoWithBody" methodname="PostATodoWithBody" classname="ToDoAPI.Features.PostMethodScenarioFeature" runstate="Runnable" seed="9433144" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:52Z" duration="0.316436" asserts="2">
+              <properties>
+                <property name="Description" value="post a todo with body" />
+              </properties>
+              <output><![CDATA[Given Create Request "/todos" with "POST" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos", POST) (0.0s)
+When user adds the following data
+  --- table step argument ---
+  | userId | id | title    | completed |
+  | 2      | 25 | Test Api | True      |
+-> done: PostMethodScenario.WhenUserAddsTheFollowingData(<table>) (0.0s)
+And API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.3s)
+Then the response code status should be 201
+Response code is: 201
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(201) (0.0s)
+And response body should have id as 201
+-> done: PostMethodScenario.ThenResponseBodyShouldHaveIdAs("201") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1011" name="PostATodoWithNoBody" fullname="ToDoAPI.Features.PostMethodScenarioFeature.PostATodoWithNoBody" methodname="PostATodoWithNoBody" classname="ToDoAPI.Features.PostMethodScenarioFeature" runstate="Runnable" seed="1088836333" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:52Z" duration="0.260284" asserts="2">
+              <properties>
+                <property name="Description" value="post a todo with no body" />
+                <property name="Category" value="mytag" />
+              </properties>
+              <output><![CDATA[Given Create Request "/todos" with "POST" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos", POST) (0.0s)
+When request body is empty
+-> done: PostMethodScenario.WhenRequestBodyIsEmpty() (0.0s)
+And API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.3s)
+Then the response code status should be 201
+Response code is: 201
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(201) (0.0s)
+And response body should have id as 201
+-> done: PostMethodScenario.ThenResponseBodyShouldHaveIdAs("201") (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1013" name="PutMethodScenarioFeature" fullname="ToDoAPI.Features.PutMethodScenarioFeature" classname="ToDoAPI.Features.PutMethodScenarioFeature" runstate="Runnable" testcasecount="3" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:54Z" duration="1.523828" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+            <properties>
+              <property name="Description" value="PutMethodScenario" />
+            </properties>
+            <test-suite type="ParameterizedMethod" id="0-1017" name="UpdateATodoWithWithInvalidId" fullname="ToDoAPI.Features.PutMethodScenarioFeature.UpdateATodoWithWithInvalidId" classname="ToDoAPI.Features.PutMethodScenarioFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:54Z" duration="1.069898" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+              <properties>
+                <property name="Description" value="update a todo with with invalid id" />
+              </properties>
+              <test-case id="0-1015" name="UpdateATodoWithWithInvalidId(&quot;900&quot;,&quot;500&quot;,null)" fullname="ToDoAPI.Features.PutMethodScenarioFeature.UpdateATodoWithWithInvalidId(&quot;900&quot;,&quot;500&quot;,null)" methodname="UpdateATodoWithWithInvalidId" classname="ToDoAPI.Features.PutMethodScenarioFeature" runstate="Runnable" seed="1283810663" result="Passed" start-time="2020-06-30 20:25:52Z" end-time="2020-06-30 20:25:53Z" duration="0.463869" asserts="1">
+                <output><![CDATA[Given Create Request "todos/{id}" with "PUT" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("todos/{id}", PUT) (0.0s)
+And Create endpoint for "id" with parameter 900
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "900") (0.0s)
+When user adds the following data
+  --- table step argument ---
+  | userId | id | title      | completed |
+  | 2      | 25 | Update Api | True      |
+-> done: PostMethodScenario.WhenUserAddsTheFollowingData(<table>) (0.0s)
+And API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.5s)
+Then the response code status should be 500
+Response code is: 500
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(500) (0.0s)
+]]></output>
+              </test-case>
+              <test-case id="0-1016" name="UpdateATodoWithWithInvalidId(&quot;&quot;,&quot;404&quot;,null)" fullname="ToDoAPI.Features.PutMethodScenarioFeature.UpdateATodoWithWithInvalidId(&quot;&quot;,&quot;404&quot;,null)" methodname="UpdateATodoWithWithInvalidId" classname="ToDoAPI.Features.PutMethodScenarioFeature" runstate="Runnable" seed="252462611" result="Passed" start-time="2020-06-30 20:25:53Z" end-time="2020-06-30 20:25:54Z" duration="0.605828" asserts="1">
+                <output><![CDATA[Given Create Request "todos/{id}" with "PUT" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("todos/{id}", PUT) (0.0s)
+And Create endpoint for "id" with parameter
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "") (0.0s)
+When user adds the following data
+  --- table step argument ---
+  | userId | id | title      | completed |
+  | 2      | 25 | Update Api | True      |
+-> done: PostMethodScenario.WhenUserAddsTheFollowingData(<table>) (0.0s)
+And API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.6s)
+Then the response code status should be 404
+Response code is: 404
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(404) (0.0s)
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-case id="0-1014" name="UpdateATodoWithWithValidId" fullname="ToDoAPI.Features.PutMethodScenarioFeature.UpdateATodoWithWithValidId" methodname="UpdateATodoWithWithValidId" classname="ToDoAPI.Features.PutMethodScenarioFeature" runstate="Runnable" seed="2024897441" result="Passed" start-time="2020-06-30 20:25:54Z" end-time="2020-06-30 20:25:54Z" duration="0.452550" asserts="2">
+              <properties>
+                <property name="Description" value="update a todo with with valid id" />
+                <property name="Category" value="mytag" />
+              </properties>
+              <output><![CDATA[Given Create Request "/todos/{id}" with "PUT" method
+Request Created
+-> done: SharedSteps.GivenCreateRequestWithMethod("/todos/{id}", PUT) (0.0s)
+And Create endpoint for "id" with parameter 25
+-> done: SharedSteps.GivenCreateEndpointForWithParameter("id", "25") (0.0s)
+When user adds the following data
+  --- table step argument ---
+  | userId | id | title      | completed |
+  | 2      | 25 | Update Api | True      |
+-> done: PostMethodScenario.WhenUserAddsTheFollowingData(<table>) (0.0s)
+And API request is executed
+-> done: SharedSteps.APIRequesIsExecuted() (0.4s)
+Then the response code status should be 200
+Response code is: 200
+-> done: SharedSteps.ThenResponseCodeStatusShouldBe(200) (0.0s)
+And response body should have id as 25
+-> done: PostMethodScenario.ThenResponseBodyShouldHaveIdAs("25") (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
