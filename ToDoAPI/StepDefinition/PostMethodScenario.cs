@@ -16,12 +16,8 @@ namespace ToDoAPI.StepDefinition
         [When(@"request body is empty")]
         public void WhenRequestBodyIsEmpty()
         {
-            var body = new ResponseObjects()
-            {
-                //empty body
-            };
-
-            DataFormat.Serializedata(body);
+           string body = "{}";            
+           SharedSteps.apiRequest.AddJsonBody(body);  
         }
 
         [When(@"user adds the following data")]
