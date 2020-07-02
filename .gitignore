@@ -1,0 +1,7 @@
+# Ignore local files
+
+ToDoAPI/bin/Debug/
+ToDoAPI/obj/Debug/
+packages/
+.vs/ToDoAPI/v15/
+

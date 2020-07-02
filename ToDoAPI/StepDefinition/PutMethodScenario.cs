@@ -4,7 +4,6 @@ using RestSharp;
 using RestSharp.Serialization.Json;
 using TechTalk.SpecFlow;
 using ToDoAPI.Models;
-using ToDoAPI.Util;
 
 
 namespace ToDoAPI.StepDefinition
